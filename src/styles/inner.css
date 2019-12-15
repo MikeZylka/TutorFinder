@@ -1,0 +1,148 @@
+body {
+  position: relative;
+  margin: 0;
+  width: 100vw !important;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  z-index: 2;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.signup__overlay {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: rgba(0, 10, 20, 0.9);
+}
+
+.signup img {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.signup__title {
+  padding-top: 10rem;
+  font-size: 4rem;
+}
+
+.signup__title span {
+  color: #2093cd;
+  font-weight: bold;
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 4rem;
+  padding-bottom: 4rem;
+}
+
+.signup__form-row {
+  display: flex;
+  margin: 1rem 2rem;
+  flex-direction: column;
+  width: calc(33.33% - 4rem);
+}
+
+.signup__form-row input,
+.signup__form-row select {
+  color: white;
+  padding-left: 1rem;
+  background-color: rgba(6, 50, 71, 0.6);
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #0066ff;
+  margin-bottom: 0.5rem;
+}
+
+.signup__form-row.radio input {
+  height: inherit;
+}
+
+.signup__form-row.md {
+  width: calc(50% - 4rem);
+}
+
+.signup__form-row.lg {
+  width: 100%;
+}
+
+.signup__form-row.radio {
+  display: block;
+}
+
+.signup__form-row.radio label {
+  display: block;
+  padding-bottom: 0.25rem;
+}
+
+.signup__form-row.submit button {
+  background-color: #0066ff;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.75rem 0rem;
+  width: 400px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .signup__title {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .signup__form-row {
+    width: 100%;
+  }
+
+  .signup__form-row.submit button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .signup__form {
+    margin: 0.5rem 0rem;
+  }
+  .signup__title {
+    font-size: 2rem;
+  }
+
+  .signup__form-row.md {
+    width: 100%;
+  }
+}

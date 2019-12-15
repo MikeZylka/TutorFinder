@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TutorFinder</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/styles/app.css" />
+    <link rel="stylesheet" href="src/styles/nav.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">
+        <img src="src/images/tutor-finder-logo.png" alt="Tutor Finder Logo" />
+        <p>tutor finder</p>
+      </a>
+      <ul class="nav__navigation">
+        <li>
+          <a href="students.html">students</a>
+        </li>
+        <li class="nav__navigation-sep">|</li>
+        <li>
+          <a href="tutors.html">tutors</a>
+        </li>
+        <li class="nav__navigation-sep">|</li>
+        <li>
+          <a href="about.html">about</a>
+        </li>
+      </ul>
+      <div class="nav__login">
+        <div class="nav__login--info">
+          <p>Hailey</p>
+          <p class="nav__login--info-type">student</p>
+        </div>
+        <img src="src/images/profile-picture.jpg" alt="Profile Picture" />
+      </div>
+      <button class="mobile-menu__open" id="menu_btn">
+        menu
+        <span class="mobile-menu-line"></span>
+        <span class="mobile-menu-line"></span>
+        <span class="mobile-menu-line"></span>
+      </button>
+      <nav class="mobile-menu__menu">
+        <a href="students.html">students</a>
+        <a href="tutors.html">tutors</a>
+        <a href="about.html">about</a>
+      </nav>
+    </nav>
+    <section class="hero">
+      <img alt="man in coffee shop on laptop" src="src/images/front-hero.jpg" />
+      <div class="hero__content">
+        <p>Qualified tutors</p>
+        <p>are in your area</p>
+        <a href="students.html" class="sites-button outline">
+          find a tutor
+        </a>
+      </div>
+    </section>
+    <section class="info">
+      <div class="info__left">
+        <p class="info__left-line"><span>finding</span> a tutor</p>
+        <p class="info__left-line">shouldn't be</p>
+        <p class="info__left-line">so<span> difficult.</span></p>
+      </div>
+      <div class="info__right">
+        <div class="info__right-content">
+          <a href="tutors.html" class="info__right-content-single">
+            <p class="info__right-content-single-title">Tutor</p>
+            <p class="info__right-content-single-subtitle">
+              looking for students?
+            </p>
+            <div></div>
+            <p class="info__right-content-single-looking">
+              Register to be a Tutor
+            </p>
+          </a>
+          <a href="students.html" class="info__right-content-single">
+            <p class="info__right-content-single-title">Student</p>
+            <p class="info__right-content-single-subtitle">
+              looking for tutors?
+            </p>
+            <div></div>
+            <p class="info__right-content-single-looking">
+              See Available Tutors
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="tutors">
+      <div class="tutors__swipe">Swipe Through Tutors</div>
+      <div class="siema">
+        <div class="tutors__slide">
+          <a href="#" class="tutors__single">
+            <img
+              class="tutors__single-image"
+              src="src/images/daniel-wang.jpg"
+              alt="Tutor's Profile Picture"
+            />
+            <p class="tutors__single-name">Daniel W.</p>
+            <p class="tutors__single-education">Harvard University</p>
+            <p class="tutors__single-concentration">Calculus & Physics</p>
+            <p class="tutors__single-hire">Hire Daniel</p>
+          </a>
+        </div>
+        <div class="tutors__slide">
+          <a href="#" class="tutors__single">
+            <img
+              class="tutors__single-image"
+              src="src/images/profile-picture2.jpg"
+              alt="Tutor's Profile Picture"
+            />
+            <p class="tutors__single-name">Josh H.</p>
+            <p class="tutors__single-education">
+              Georgia Tech
+            </p>
+            <p class="tutors__single-concentration">Computer Science</p>
+            <p class="tutors__single-hire">Hire Josh</p>
+          </a>
+        </div>
+        <div class="tutors__slide">
+          <a href="#" class="tutors__single">
+            <img
+              class="tutors__single-image"
+              src="src/images/profile-picture3.jpg"
+              alt="Tutor's Profile Picture"
+            />
+            <p class="tutors__single-name">Terrance L.</p>
+            <p class="tutors__single-education">University of Chicago</p>
+            <p class="tutors__single-concentration">Creative Writing</p>
+            <p class="tutors__single-hire">Hire Terrance</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__title">got a <span>question?</span></p>
+      <p class="footer__title"><span>get in</span> touch.</p>
+      <form action="#" method="post" class="footer__form">
+        <div class="footer__form-row">
+          <input type="text" name="Name" id="sf-name" required />
+          <label class="footer__form-row-label">
+            Name *
+          </label>
+        </div>
+        <div class="footer__form-row">
+          <input type="email" name="Email" id="sf-email" />
+          <label class="footer__form-row-label">
+            Email *
+          </label>
+        </div>
+        <div class="footer__form-row">
+          <input type="tel" name="Phone" id="sf-phone" />
+          <label class="footer__form-row-label">
+            Phone
+          </label>
+        </div>
+        <div class="footer__form-row lg">
+          <textarea name="Message" id="sf-desc" required></textarea>
+          <label class="footer__form-row-label">
+            Message *
+          </label>
+        </div>
+        <div class="footer__form-row submit">
+          <button class="footer__form-row-button sites-button red">
+            send message
+          </button>
+        </div>
+      </form>
+      <p class="footer__copy">&copy; 2019 TutorFinder. All Rights Reserved.</p>
+    </footer>
+    <script src="src/scripts/navbar.js" async defer></script>
+    <script src="src/scripts/siema.min.js"></script>
+    <script>
+      const slider = new Siema({
+        duration: 200,
+        easing: "ease-out",
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        loop: true
+      });
+    </script>
+  </body>
+</html>

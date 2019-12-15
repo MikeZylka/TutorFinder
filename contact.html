@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TutorFinder</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/styles/contact.css" />
+    <link rel="stylesheet" href="src/styles/nav.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">
+        <img src="src/images/tutor-finder-logo.png" alt="Tutor Finder Logo" />
+        <p>tutor finder</p>
+      </a>
+      <ul class="nav__navigation">
+        <li>
+          <a href="students.html">students</a>
+        </li>
+        <li class="nav__navigation-sep">|</li>
+        <li>
+          <a href="tutors.html">tutors</a>
+        </li>
+        <li class="nav__navigation-sep">|</li>
+        <li>
+          <a href="contact.html">contact</a>
+        </li>
+      </ul>
+      <div class="nav__login">
+        <div class="nav__login--info">
+          <p>Hailey</p>
+          <p class="nav__login--info-type">student</p>
+        </div>
+        <img src="src/images/profile-picture.jpg" alt="Profile Picture" />
+      </div>
+      <button class="mobile-menu__open" id="menu_btn">
+        menu
+        <span class="mobile-menu-line"></span>
+        <span class="mobile-menu-line"></span>
+        <span class="mobile-menu-line"></span>
+      </button>
+      <nav class="mobile-menu__menu">
+        <a href="students.html">students</a>
+        <a href="tutors.html">tutors</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </nav>
+    <section class="contact">
+      <p class="contact__title">got a <span>question?</span></p>
+      <p class="contact__title"><span>get in</span> touch.</p>
+      <form action="#" method="post" class="contact__form">
+        <div class="contact__form-row">
+          <input type="text" name="Name" id="sf-name" required />
+          <label class="contact__form-row-label">
+            Name *
+          </label>
+        </div>
+        <div class="contact__form-row">
+          <input type="email" name="Email" id="sf-email" />
+          <label class="contact__form-row-label">
+            Email *
+          </label>
+        </div>
+        <div class="contact__form-row">
+          <input type="tel" name="Phone" id="sf-phone" />
+          <label class="contact__form-row-label">
+            Phone
+          </label>
+        </div>
+        <div class="contact__form-row lg">
+          <textarea name="Message" id="sf-desc" required></textarea>
+          <label class="contact__form-row-label">
+            Message *
+          </label>
+        </div>
+        <div class="contact__form-row submit">
+          <button class="contact__form-row-button sites-button red">
+            send message
+          </button>
+        </div>
+      </form>
+      <p class="contact__copy">&copy; 2019 TutorFinder. All Rights Reserved.</p>
+    </section>
+    <script src="src/scripts/navbar.js" async defer></script>
+  </body>
+</html>

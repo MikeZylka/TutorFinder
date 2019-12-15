@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    width: 100vw !important;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+    border-bottom: 3px solid #111111;
+    box-shadow: 5px 3px 5px #115482;
+}
+
+.content {
+    overflow: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.content h2 {
+    margin: 0 auto;
+    margin-top: 12rem;
+    width: 800px;
+    vertical-align: top;
+    font-family: 'Montserrat', sans-serif;
+    color: #2093cd;
+    text-shadow: 2px 1px 6px #111111;
+    font-size: 5.5rem;
+    display: inline-block;
+}
+
+.content img {
+    display: inline-block;
+    height: 86vh;
+}
+
+@media (max-width: 1024px) {
+    .content h2 {
+        font-size: 4rem;
+        display: block;
+        width: auto;
+        padding: 0 20px;
+    }
+}
+
+.summary {
+    width: 100%;
+    height: 100vh;
+}
+
+.accompany_image {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10;
+    position: absolute;
+}
+
+.accompany_image img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.summary_text {
+    z-index: 10;
+    width: 75%;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    margin-top: 100vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.summary_text p {
+    color: white;
+    font-size: 2.9rem;
+    text-shadow: 3px 3px 6px #000000;
+}
+
+.finals {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+}
+
+.night {
+    flex: 70%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-grow: inherit;
+    border: 10px solid black;
+}
+
+.night img {
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.finals_info {
+    flex: 30%;
+    background-color: black;
+}
+
+.finals_info h2 {
+    text-align: center;
+    color: white;
+    font-size: 8vh;
+    padding: 4px;
+    padding-right: 20px;
+}
+
+.finals_info p {
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    padding: 2px;
+    padding-right: 20px;
+}
+
+@media (max-width: 1024px) {
+    .finals {
+        height: auto;
+        display: block;
+    }
+    .night {
+        height: 25rem;
+        display: block;
+        width: 100%;
+    }
+    .finals_info {
+        display: block;
+    }
+    .finals_info h2 {
+        margin-top: 0;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .finals_info p {
+        width: 400px;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+}
+
+.qualified_tutors {
+    width: 100%;
+    height: 70vh;
+}
+
+.qtImage {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    z-index: -10;
+    position: absolute;
+}
+
+.qtImage img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.qualified_text {
+    padding-top: 1rem;
+    padding-left: 3rem;
+    width: 50vw;
+    height: 10vh;
+}
+
+.qualified_text h2 {
+    color: white;
+    text-shadow: 3px 3px 6px #000000;
+    font-size: 3rem;
+}
+
+.qualified_text button {
+    background-color: #2093cd;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1.5rem 4rem;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    z-index: 20;
+    box-shadow: 0px 5px 15px black;
+}
+
+.qualified_text button:hover {
+    background-color: black;
+    box-shadow: 0px 5px 150px black;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .qualified_text h2 {
+        font-size: 2rem;
+    }
+    .qualified_text button {
+        font-size: 1rem;
+    }
+}

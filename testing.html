@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="src/styles/tutors.css" /> -->
+    <link rel="stylesheet" href="src/styles/app.css" />
+    <link rel="stylesheet" href="src/styles/nav.css" />
+    <title>Tutors</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav__logo">
+            <img src="src/images/tutor-finder-logo.png" alt="Tutor Finder Logo" />
+            <p>tutor finder</p>
+        </a>
+        <ul class="nav__navigation">
+            <li>
+                <a href="students.html">students</a>
+            </li>
+            <li class="nav__navigation-sep">|</li>
+            <li>
+                <a href="tutors.html">tutors</a>
+            </li>
+            <li class="nav__navigation-sep">|</li>
+            <li>
+                <a href="about.html">about</a>
+            </li>
+        </ul>
+        <div class="nav__login">
+            <div class="nav__login--info">
+                <p>Hailey</p>
+                <p class="nav__login--info-type">student</p>
+            </div>
+            <img src="src/images/blankuser.png" alt="Profile Picture" />
+        </div>
+        <button class="mobile-menu__open" id="menu_btn">
+            menu
+            <span class="mobile-menu-line"></span>
+            <span class="mobile-menu-line"></span>
+            <span class="mobile-menu-line"></span>
+        </button>
+        <nav class="mobile-menu__menu">
+            <a href="students.html">students</a>
+            <a href="tutors.html">tutors</a>
+            <a href="about.html">about</a>
+        </nav>
+    </nav>
+    <section class="tutors">
+        <div id="swipe_title" class="tutors__swipe">Swipe Through Tutors</div>
+        <div id="siema" class="siema">
+          
+        </div>
+      </section>
+    <script src="src/scripts/app.js" async defer></script>
+    <script src="src/scripts/siema.min.js"></script>
+    <script src="src/scripts/profiles.js"></script>
+</body>
+
+</html>
