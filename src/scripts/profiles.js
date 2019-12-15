@@ -78,17 +78,17 @@ var students = []
 
 
 var tutorProfiles = [
-    "Amanda;07030;Math,English;10;profile-picture2.jpg;20",
+    "Amanda;07030;Math,English;10;profile-picture.jpg;20",
     "Brett;07030;English;10;profile-picture2.jpg;15",
-    "Kanye;07030;Computer Science;10;profile-picture2.jpg;10",
-    "Claire;07030;Physics;10;profile-picture2.jpg;15"
+    "Kanye;07030;Computer Science;10;profile-picture3.jpg;10",
+    "Claire;07030;Physics;10;profile-picture.jpg;15"
 ];
 
 var studentProfiles = [
-    "Amanda;07030;Math,English;10;profile-picture2.jpg;11",
+    "Amanda;07030;Math,English;10;profile-picture.jpg;11",
     "Brett;07030;English;10;profile-picture2.jpg;12",
-    "Kanye;07030;Computer Science;10;profile-picture2.jpg;10",
-    "Claire;07030;Physics;10;profile-picture2.jpg;9"
+    "Kanye;07030;Computer Science;10;profile-picture3.jpg;10",
+    "Claire;07030;Physics;10;profile-picture.jpg;9"
 ];
 
 function generateProfile(profile) {
@@ -158,10 +158,6 @@ function generateProfile(profile) {
 
 }
 
-function updateUserInfo(name, type) {
-    document.getElementById("current-user-name").innerText = name;
-    document.getElementById("current-user-type").innerText = type;
-}
 
 function applyFilters(profileList, filters) {
     if (isTutorList) {
@@ -179,6 +175,10 @@ function applyFilters(profileList, filters) {
 
 window.addEventListener("load", function () {
     //    var pageName = location.href.split("/".slice(-1));
+    if (sessionStorage.name == undefined) {
+        window.location.href = "./index.html";
+        alert("You are not logged in!");
+    }
     const slider = new Siema({
         duration: 200,
         easing: "ease-out",
@@ -198,7 +198,6 @@ window.addEventListener("load", function () {
             slider.append(profile);
         }
         document.getElementById("swipe_title").innerText = "Swipe Through Tutors";
-        updateUserInfo(sessionStorage.name, "student");
     } else {
         for (var i = 0; i != studentProfiles.length; ++i) {
             var params = studentProfiles[i].split(";");
@@ -210,8 +209,7 @@ window.addEventListener("load", function () {
             slider.append(profile);
         }
         document.getElementById("swipe_title").innerText = "Swipe Through Students";
-        updateUserInfo(sessionStorage.t_name, "tutor");
 
     }
-    
+
 });

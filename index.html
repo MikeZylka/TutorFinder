@@ -35,10 +35,10 @@
       </ul>
       <div class="nav__login">
         <div class="nav__login--info">
-          <p>Hailey</p>
-          <p class="nav__login--info-type">student</p>
+          <a href="#register" id="current-user-name">Log In</a>
+          <p id="current-user-type" class="nav__login--info-type"></p>
         </div>
-        <img src="src/images/profile-picture.jpg" alt="Profile Picture" />
+        <img src="src/images/blankuser.png" alt="Profile Picture" />
       </div>
       <button class="mobile-menu__open" id="menu_btn">
         menu
@@ -68,7 +68,7 @@
         <p class="info__left-line">shouldn't be</p>
         <p class="info__left-line">so<span> difficult.</span></p>
       </div>
-      <div class="info__right">
+      <div class="info__right" id="register">
         <div class="info__right-content">
           <a href="tutors.html" class="info__right-content-single">
             <p class="info__right-content-single-title">Tutor</p>
@@ -97,7 +97,7 @@
       <div class="tutors__swipe">Swipe Through Tutors</div>
       <div class="siema">
         <div class="tutors__slide">
-          <a href="#" class="tutors__single">
+          <a href="students.html" class="tutors__single">
             <img
               class="tutors__single-image"
               src="src/images/daniel-wang.jpg"
@@ -110,7 +110,7 @@
           </a>
         </div>
         <div class="tutors__slide">
-          <a href="#" class="tutors__single">
+          <a href="students.html" class="tutors__single">
             <img
               class="tutors__single-image"
               src="src/images/profile-picture2.jpg"
@@ -125,7 +125,7 @@
           </a>
         </div>
         <div class="tutors__slide">
-          <a href="#" class="tutors__single">
+          <a href="students.html" class="tutors__single">
             <img
               class="tutors__single-image"
               src="src/images/profile-picture3.jpg"
@@ -177,15 +177,7 @@
     </footer>
     <script src="src/scripts/navbar.js" async defer></script>
     <script src="src/scripts/siema.min.js"></script>
-    <script>
-      const slider = new Siema({
-        duration: 200,
-        easing: "ease-out",
-        perPage: 1,
-        startIndex: 0,
-        draggable: true,
-        loop: true
-      });
-    </script>
+    <script src="src/scripts/login.js"></script>
+    <script src="src/scripts/main.js"></script>
   </body>
 </html>
